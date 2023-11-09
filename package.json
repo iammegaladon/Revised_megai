@@ -12,12 +12,6 @@
     "email": "eyueldaniel0921@gmail.com",
     "url": "https://github.com/eyucoder"
   },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
   "dependencies": {
     "langchain": "^0.0.155",
     "moment": "^2.29.4",
