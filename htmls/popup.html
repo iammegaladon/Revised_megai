@@ -1,0 +1,33 @@
+
+
+<link rel="stylesheet" href="/Users/HP/megai/htmls/popup.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<div class="modal__container show-modal" id="modal-container">
+    <div class="modal__content">
+        <div class="modal__close close-modal" title="Close">
+            <i class="bx bx-x"></i>
+        </div>
+
+
+
+        <h1 class="modal__title">Good Job!</h1>
+        <p class="modal__description">Click the button to close</p>
+
+        <button class="modal__button modal__button-width">
+            View status
+        </button>
+
+        <button class="modal__button-link close-modal">
+            Close
+        </button>
+    </div>
+</div>
+<script>
+  const closeBtn = document.querySelectorAll('.close-modal')
+
+  function closeModal(){
+      const modalContainer = document.getElementById('modal-container')
+      modalContainer.classList.remove('show-modal')
+  }
+  closeBtn.forEach(c => c.addEventListener('click', closeModal))
+</script>
